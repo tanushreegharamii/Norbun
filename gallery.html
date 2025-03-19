@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery | Bhutan Tours</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+
+     /* Navbar */
+     .navbar {
+      background-color: #ff7f0e;
+      color: white;
+      font-family: cinzel;
+    }
+
+    .navbar li {
+      color: white;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+      color: white !important
+    }
+
+    .nav-link:focus,
+    .nav-link:hover {
+      color: white
+    }
+
+    .nav-link {
+      display: block;
+      padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+      font-size: var(--bs-nav-link-font-size);
+      font-weight: var(--bs-nav-link-font-weight);
+      color: white !important;
+      text-decoration: none;
+      background: 0 0;
+      border: 0;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    }
+
+
+body {
+    font-family: cinzel
+}
+h2{
+    color: #ff7f0e;
+}
+/* Hero Section */
+.hero {
+    background-color: #444141;
+    /* background: url('https://images.unsplash.com/photo-1608791378807-53caa6648b03?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover; */
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Gallery Section */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    transition: 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+    opacity: 0.8;
+}
+
+/* Video Section */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+}
+h1{
+    color: orange;
+}
+
+
+    /* FOOTER */
+    .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: white;
+    ;
+    background-color: #ff7f0e;
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  .footer > * {
+    flex:  1 100%;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+  }
+  
+  .footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .nav__title {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .footer address {
+    font-style: normal;
+    color: #999;
+  }
+  
+  .footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: white;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav__ul a {
+    color: white;
+  }
+  
+  .nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+  }
+  
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+  }
+    
+  .legal__links {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+    
+    .nav__item--extra {
+      flex-grow: 2;
+    }
+    
+    .footer__addr {
+      flex: 1 0px;
+    }
+    
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
+
+    </style>
+</head>
+<body>
+
+              <!-- NAVBAR -->
+  <nav class="navbar p-4 navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="#">Norbum</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 gap-3 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./destination.html">Destination</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="book_your_trip.html">Book Trip</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Guide
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./know_bhutan.html">Know Bhutan</a></li>
+              <li><a class="dropdown-item" href="./travel_guide.html">Travel Guide</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./flights.html">Flights</a></li>
+              <li><a class="dropdown-item" href="./getting_to_bhutan.html">Getting To Bhutan</a></li>
+              <li><a class="dropdown-item" href="./special_tour.html">Speacial Tour</a></li>
+              <li><a class="dropdown-item" href="./driving_distances.html">Driving Distances </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./trek.html">Trek</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container text-center text-white">
+            <h1 class="display-4">Explore Gallery</h1>
+            <p class="lead">A visual journey through the beauty of Bhutan</p>
+        </div>
+    </header>
+
+    <!-- Photo Gallery Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Photo Gallery</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519467722427-f32990069f96?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1608236475087-615bfbcdf772?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1566020588509-f77f840f1454?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="https://plus.unsplash.com/premium_photo-1661952578770-79010299a9f9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ymh1dGFufGVufDB8fDB8fHww" class="img-fluid gallery-img">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1587639895914-6f33530a3314?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1545030856-612d5feaf990?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+                </div>
+            </div>
+        </div>
+     
+        
+    </section>
+
+    <!-- Video Gallery Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Video Gallery</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="video-container">
+                    <iframe src="images/3121327-uhd_3840_2160_24fps.mp4" type="video/mp4" ></iframe>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="video-container">
+                    <iframe src="images/11901574_1920_1080_30fps.mp4" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Photo Gallery</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1729176989417-10cab5aa9076?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1618082445556-8b5e4fee89dd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1650747857310-c359fd3ee5c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+                </div>
+            </div>
+            <div class="row mt-2 g-4 row-cols-1 row-cols-lg-2">
+                <div class="col">
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/761265/pexels-photo-761265.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             class="img-fluid gallery-img">
+                    </div>
+                </div>
+            
+                <div class="col">
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/3823266/pexels-photo-3823266.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             class="img-fluid gallery-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        
+    </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="footer__addr">
+      <h1 class="footer__logo">Something</h1>
+
+      <h2>Contact</h2>
+
+      <address>
+        <h2>Address</h2><br>
+
+        <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+      </address>
+    </div>
+
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Travel</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Book Us</a>
+          </li>
+
+          <li>
+            <a href="#">About</a>
+          </li>
+
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav__title"></h2>
+
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#">Getting To Bhutan</a>
+          </li>
+
+          <li>
+            <a href="#">Book Your Trip</a>
+          </li>
+
+          <li>
+            <a href="#">Flight</a>
+          </li>
+
+          <li>
+            <a href="#">Gallery</a>
+          </li>
+
+          <li>
+            <a href="#">Pages</a>
+          </li>
+
+          <li>
+            <a href="#">Review</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <h2 class="nav__title"></h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+
+          <li>
+            <a href="#">Condition</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="legal">
+      <p>&copy; 2025 Something. All rights reserved. sjsoftechtechnology</p>
+
+
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

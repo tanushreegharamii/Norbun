@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Norbum | Bhutan's Best Travel Guide</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+             /* General Styling */
+
+     /* Navbar */
+     .navbar {
+      background-color: #ff7f0e;
+      color: white;
+      font-family: cinzel;
+    }
+
+    .navbar li {
+      color: white;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+      color: white !important
+    }
+
+    .nav-link:focus,
+    .nav-link:hover {
+      color: white
+    }
+
+    .nav-link {
+      display: block;
+      padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+      font-size: var(--bs-nav-link-font-size);
+      font-weight: var(--bs-nav-link-font-weight);
+      color: white !important;
+      text-decoration: none;
+      background: 0 0;
+      border: 0;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    }
+
+
+body {
+    font-family: cinzel
+}
+h2{
+    color: #ff7f0e;
+}
+
+
+
+
+
+
+/* Hero Section */
+.hero-about {
+    background-color: #525252;
+    /* background: url('https://source.unsplash.com/1600x700/?bhutan,landscape') no-repeat center center/cover; */
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Hover Cards */
+.hover-card {
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hover-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Team Section */
+.team-card {
+    text-align: center;
+    padding: 10px;
+}
+
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.team-card:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+    /* FOOTER */
+    .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: white;
+    ;
+    background-color: #ff7f0e;
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  .footer > * {
+    flex:  1 100%;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+  }
+  
+  .footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .nav__title {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .footer address {
+    font-style: normal;
+    color: #999;
+  }
+  
+  .footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: white;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav__ul a {
+    color: white;
+  }
+  
+  .nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+  }
+  
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+  }
+    
+  .legal__links {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+    
+    .nav__item--extra {
+      flex-grow: 2;
+    }
+    
+    .footer__addr {
+      flex: 1 0px;
+    }
+    
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
+  h1{
+    color: orange;
+}
+.btn{
+    background-color: #ff7f0e;
+    color: white;
+}
+.btn:hover{
+    background-color: #ff7f0e;
+    color: white;
+}
+    </style>
+</head>
+<body>
+
+               <!-- NAVBAR -->
+  <nav class="navbar p-4 navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="#">Norbum</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 gap-3 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./destination.html">Destination</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="book_your_trip.html">Book Trip</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Guide
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./know_bhutan.html">Know Bhutan</a></li>
+              <li><a class="dropdown-item" href="./travel_guide.html">Travel Guide</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./flights.html">Flights</a></li>
+              <li><a class="dropdown-item" href="./getting_to_bhutan.html">Getting To Bhutan</a></li>
+              <li><a class="dropdown-item" href="./special_tour.html">Speacial Tour</a></li>
+              <li><a class="dropdown-item" href="./driving_distances.html">Driving Distances </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./trek.html">Trek</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+    <!-- Hero Section -->
+    <header class="hero-about">
+        <div class="container text-center text-white">
+            <h1 class="display-4">Welcome to Norbum</h1>
+            <p class="lead">Your Trusted Travel Partner in Bhutan</p>
+        </div>
+    </header>
+
+    <!-- Who We Are Section -->
+    <section class="container my-5 text-center">
+        <h2 class="mb-4">Who We Are</h2>
+        <p class="lead">Norbum is a premier travel agency dedicated to providing unforgettable experiences in Bhutan. We specialize in trekking, cultural tours, and adventure activities, ensuring travelers get the best of Bhutan's beauty and heritage.</p>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img src="https://images.pexels.com/photos/761265/pexels-photo-761265.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid rounded">
+            </div>
+            <div class="col-lg-6">
+                <h2>Our Mission & Vision</h2>
+                <p>Norbum is dedicated to offering unique, sustainable, and culturally immersive travel experiences. Our goal is to help travelers connect with the heart of Bhutan while preserving its traditions.</p>
+                <ul>
+                    <li>🌍 Sustainable Tourism</li>
+                    <li>🏔️ Adventure & Cultural Experiences</li>
+                    <li>🙏 Respect for Local Traditions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="container my-5 text-center">
+        <h2>Why Choose Norbum?</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card hover-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Expert Guides</h5>
+                        <p class="card-text">Our local guides have deep knowledge of Bhutan’s culture, history, and nature.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card hover-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Customized Tours</h5>
+                        <p class="card-text">We craft personalized travel plans to meet every traveler’s needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card hover-card">
+                    <div class="card-body">
+                        <h5 class="card-title">100% Satisfaction</h5>
+                        <p class="card-text">We ensure a hassle-free experience with seamless booking and support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team -->
+    <section class="container my-5 text-center">
+        <h2>Meet Our Team</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="team-card">
+                    <img src="https://images.pexels.com/photos/9163027/pexels-photo-9163027.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid rounded-circle">
+                    <h5>Sonam Wangchuk</h5>
+                    <p>Founder & CEO</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-card">
+                    <img src="https://images.pexels.com/photos/2666001/pexels-photo-2666001.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid rounded-circle">
+                    <h5>Pema Choden</h5>
+                    <p>Head Tour Guide</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-card">
+                    <img src="https://images.pexels.com/photos/6904721/pexels-photo-6904721.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid rounded-circle">
+                    <h5>Jigme Dorji</h5>
+                    <p>Adventure Specialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="text-center my-5">
+        <h2>Ready to Explore Bhutan?</h2>
+        <button class="btn">Contact Us</button>
+    </section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer__addr">
+      <h1 class="footer__logo">Something</h1>
+
+      <h2>Contact</h2>
+
+      <address>
+        <h2>Address</h2><br>
+
+        <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+      </address>
+    </div>
+
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Travel</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Book Us</a>
+          </li>
+
+          <li>
+            <a href="#">About</a>
+          </li>
+
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav__title"></h2>
+
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#">Getting To Bhutan</a>
+          </li>
+
+          <li>
+            <a href="#">Book Your Trip</a>
+          </li>
+
+          <li>
+            <a href="#">Flight</a>
+          </li>
+
+          <li>
+            <a href="#">Gallery</a>
+          </li>
+
+          <li>
+            <a href="#">Pages</a>
+          </li>
+
+          <li>
+            <a href="#">Review</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <h2 class="nav__title"></h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+
+          <li>
+            <a href="#">Condition</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="legal">
+      <p>&copy; 2025 Something. All rights reserved. sjsoftechtechnology</p>
+
+
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.querySelector(".btn-primary").addEventListener("click", function() {
+    alert("Contact us page coming soon!");
+});
+
+    </script>
+</body>
+</html>
