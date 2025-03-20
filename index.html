@@ -46,6 +46,257 @@
       border: 0;
       transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
     }
+    @media screen and (min-device-width: 300px) and (max-device-width: 600px) { 
+    .hero-content h1{
+      font-size: 2vh;
+    }
+    .hero-content p {
+    color: white;
+    margin-left: 2px;
+    font-family: "Dancing Script";
+    font-size: 2vh;
+}
+.hero-content {
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    font-family: "Cinzel";
+}
+.tour-item {
+    text-align: center;
+    color: white;
+    border-right: 0.5px solid rgb(216, 216, 216);
+    width: 10%;
+    height: 25vh;
+    align-content: center;
+    justify-items: center;
+}
+.tour-item p {
+    margin-top: 25px;
+    font-family: "Cinzel";
+    font-size: 10px;
+    margin-right: 29px;
+}
+.tour-section {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    bottom: 10%;
+    display: flex;
+    gap: 39px;
+    width: 100%;
+    justify-content: center;
+}
+.tour-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 33px;
+}
+.tour_sm_cards {
+    min-width: 351px;
+    height: 60vh;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex
+;
+    align-items: flex-end;
+    color: white;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+.Popular_Tour{
+  margin-top: 10vh;
+}
+  }
+  @media screen and (min-device-width: 900px) and (max-device-width: 2000px) { 
+    .Popular_Tour{
+    margin-top: 10vh;
+  }
+  }
+
+  /* gallery */
+
+    /* General Styling */
+    @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1,h5{
+          animation: slideUp 1.5s ease-out forwards;
+        }
+     /* Navbar */
+     .navbar {
+      background-color: #ff7f0e;
+      color: white;
+      font-family: cinzel;
+    }
+
+    .navbar li {
+      color: white;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+      color: white !important
+    }
+
+    .nav-link:focus,
+    .nav-link:hover {
+      color: white
+    }
+
+    .nav-link {
+      display: block;
+      padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+      font-size: var(--bs-nav-link-font-size);
+      font-weight: var(--bs-nav-link-font-weight);
+      color: white !important;
+      text-decoration: none;
+      background: 0 0;
+      border: 0;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    }
+
+
+body {
+    font-family: cinzel
+}
+h2, h4{
+    color: #ff7f0e;
+    font-weight: 800;
+}
+/* Hero Section */
+.hero {
+    
+    background: url('./images/gallery.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Gallery Section */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    transition: 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+    opacity: 0.8;
+}
+
+/* Video Section */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+
+
+/* Book Your Trip */
+h2{
+    color: #ff7f0e;
+}
+/* Hero Section */
+.hero {
+    background: url('./images/trip.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff7f0e;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+.btn{
+    background-color: #ff7f0e;
+    color: white;
+}
+.btn:hover{
+    background-color: #ff7f0e;
+    color: white;
+}
+/* Booking Form */
+form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Features Section */
+.features img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.features img:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+            height: 200px;
+            object-fit: cover;
+}
+
+.tour_content h6{
+font-size: 12px;
+}
+.tour_content h6{
+  width:100%;height: 90px;text-wrap: wrap;font-size: 12px;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar-brand {
+  animation: slideDown 1.4s ease-out;
+}
   </style>
 
 </head>
@@ -53,9 +304,19 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar p-4 navbar-expand-lg ">
+  <nav class="navbar p-4 navbar-expand-lg " style="position: fixed;z-index: 999;width: 100%;margin-bottom: 300px;">
+    <div class="chatbot_wtsapp" style="display:flex;justify-content: space-between;width:100%;position: absolute;top:80vh;left:0;padding: 2%;align-items: center;">
+      <div style="align-content: center;width:200px;height:40px;background-color: #ff7f0e;color:white;border-radius:5px;padding: 1%;font-size: 13px;">
+        How Can We Help You
+      </div>
+      <div >
+           <img src="images/wplogo.avif" style="height: 80px;width:80px;">
+      </div>
+  </div>
     <div class="container-fluid">
-      <a class="navbar-brand text-light" href="#">Norbum</a>
+      <a class="navbar-brand text-light" href="#">
+        <img style="width:100px" src="images/logo-min.png">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -79,13 +340,10 @@
               Guide
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./know_bhutan.html">Know Bhutan</a></li>
               <li><a class="dropdown-item" href="./travel_guide.html">Travel Guide</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="./flights.html">Flights</a></li>
-              <li><a class="dropdown-item" href="./getting_to_bhutan.html">Getting To Bhutan</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./festival_tour.html">Festival Tour</a></li>
+              <li><a class="dropdown-item" href="./know_bhutan.html">Getting To Know Bhutan</a></li>
               <li><a class="dropdown-item" href="./special_tour.html">Speacial Tour</a></li>
               <li><a class="dropdown-item" href="./driving_distances.html">Driving Distances </a></li>
             </ul>
@@ -97,10 +355,9 @@
             <a class="nav-link" href="./about.html">About Us</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
-        </form>
+       
+          <p style="font-size:25px;margin-top: 10px;">NORBUM</p>
+        
       </div>
     </div>
   </nav>
@@ -109,31 +366,22 @@
 
 
   <!-- HERO -->
-  <div class="main_banner">
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+   <br>
+   <br>
+   <br>
+  <div class="main_banner" >
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <video class="video-custom" autoPlay muted loop preload="auto">
-            <source src="images/3121327-uhd_3840_2160_24fps.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
-        <div class="carousel-item">
           <video class="video-custom" autoPlay muted loop preload="auto">
             <source src="images/5598970-uhd_3840_2160_24fps.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
 
-        <div class="carousel-item">
-          <video class="video-custom" autoPlay muted loop preload="auto">
-            <source src="images/11901574_1920_1080_30fps.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      <button class="carousel-control-prev" style="z-index: 99;" type="button" data-bs-target="#carouselExampleAutoplaying"
         data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -148,14 +396,11 @@
       <h1 class="display-3">Welcome to Norbum Tours and Travels</h1>
       <p>Your Gateway to Authentic Bhutanese Experiences
         Discover the Land of Happiness with Norbum Tours and Travels</p>
-      <button class="btn-custom">Continue</button>
-      <div class="dropdown d-inline-block">
-        <button class="btn-custom btn-2 " type="button" data-bs-toggle="dropdown">Choose Our tour</button>
-
-      </div>
+      <a href="book_your_trip.html">
+        <button class="btn-custom" >Continue</button>
+      </a>
+      
     </div>
-
-
 
     <div class="tour-section">
       <div class="tour-item">
@@ -193,14 +438,6 @@
             </div> -->
     </div>
 
-
-
-
-
-
-
-
-
     <!-- <div class="search_tour" style="position: absolute;top:86%;left:10%">
           <h6>Search Tour</h6>
           <h1>Ready to Book? We are ready to help with the search</h1>
@@ -227,80 +464,24 @@
       </div> -->
 
   </div>
+  <div class="container2">
+    <h1 style="font-weight: 800;color: white;">ABOUT US</h1>
+    <p style="margin-left: 10%;margin-right: 10%;color: white;font-weight: 700;">At Norbum Tours and Travel, our mission
+      is to provide the best experiences to our guests. With years of expertise in the travel industry in Bhutan, our
+      team of seasoned professionals is dedicated to making your journey unforgettable. Our experienced staff, who have
+      been with us for years, bring a wealth of knowledge and passion to every tour we offer.We are proud to be a
+      certified tour operator by the Department of Tourism, Royal Government of Bhutan. This certification reflects our
+      commitment to maintaining the highest standards of service and quality in the travel industry.
+      We take immense pride in the high value we place on our guests. Your satisfaction is our top priority, and we
+      strive to deliver exceptional service every step of the way. Whether you're exploring the majestic landscapes,
+      immersing yourself in the rich cultural heritage, or seeking adventure in the heart of Bhutan, Norbum Tours and
+      Travel ensures you have a seamless and enriching experience.
+      Join us on a journey of discovery and let Norbum Tours and Travel make your visit to Bhutan truly special.
+    </p>
 
-  <div class="Popular_Tour" style="margin-top: 30vh;">
-    <h1>Why Visit Bhutan</h1>
-    <h6>Getting to Know Bhutan</h6>
-    <button class="carousel-btn prev" onclick="scrollCarousel(-1)">&#10094;</button>
-    <div class="tour_Cards" id="carousel">
-      <div class="tour_sm_cards"
-        style="background-image: url('https://bhutan.sjsoftechtechnology.co.in/img/mej.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;    ">
-        <div class="badges">
-          <!-- <span class="badge">20% off</span>
-                <span class="badge new">New</span> -->
-        </div>
-        <div class="tour_content">
-          <div class="stars">★★★★★ (2 Reviews)</div>
-          <h4>Majestic Landscapes </h4>
-          <!-- <p style="font-size: 10px;">6 excursions to the main cities of the country; admire the beautiful autumn gardens.</p> -->
-          <!-- <p>🕒 7 days</p> -->
-        </div>
-      </div>
-      <div class="tour_sm_cards"
-        style="background-image: url('https://bhutan.sjsoftechtechnology.co.in/img/cul.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
-        <div class="badges">
-          <!-- <span class="badge">20% off</span>
-                <span class="badge new">New</span> -->
-        </div>
-        <div class="tour_content">
-          <div class="stars">★★★★★ (2 Reviews)</div>
-          <h4>Rich Cultural Heritage<!-- | <s>3,880</s> 3,500</h4>  -->
-            <!-- <p style="font-size: 10px;">6 excursions to the main cities of the country; admire the beautiful autumn gardens.</p> -->
-            <!-- <p>🕒 7 days</p> -->
-        </div>
-      </div>
-      <div class="tour_sm_cards"
-        style="background-image: url('https://bhutan.sjsoftechtechnology.co.in/img/hos.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
-        <div class="badges">
-          <!-- <span class="badge">20% off</span>
-                <span class="badge new">New</span> -->
-        </div>
-        <div class="tour_content">
-          <div class="stars">★★★★★ (2 Reviews)</div>
-          <h4>Warm Hospitality </h4> <!-- | <s>3,880</s> 3,500 -->
-          <!-- <p style="font-size: 10px;">6 excursions to the main cities of the country; admire the beautiful autumn gardens.</p> -->
-          <!-- <p>🕒 7 days</p> -->
-        </div>
-      </div>
-      <div class="tour_sm_cards"
-        style="background-image: url('https://bhutan.sjsoftechtechnology.co.in/img/happy.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
-        <div class="badges">
-          <!-- <span class="badge">20% off</span>
-                <span class="badge new">New</span> -->
-        </div>
-        <div class="tour_content">
-          <div class="stars">★★★★★ (2 Reviews)</div>
-          <h4>Gross National Happiness </h4> <!-- | <s>3,880</s> 3,500 -->
-          <!-- <p style="font-size: 10px;">6 excursions to the main cities of the country; admire the beautiful autumn gardens.</p> -->
-          <!-- <p>🕒 7 days</p> -->
-        </div>
-      </div>
-      <div class="tour_sm_cards"
-        style="background-image: url('https://bhutan.sjsoftechtechnology.co.in/img/tu.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
-        <div class="badges">
-          <!-- <span class="badge">20% off</span>
-                <span class="badge new">New</span> -->
-        </div>
-        <div class="tour_content">
-          <div class="stars">★★★★★ (2 Reviews)</div>
-          <h4>Our Exclusive Tours </h4> <!-- | <s>3,880</s> 3,500 -->
-          <!-- <p style="font-size: 10px;">6 excursions to the main cities of the country; admire the beautiful autumn gardens.</p> -->
-          <!-- <p>🕒 7 days</p> -->
-        </div>
-      </div>
-    </div>
-    <button class="carousel-btn next" onclick="scrollCarousel(1)">&#10095;</button>
   </div>
+
+  
 
 
   <!--SERVICES  -->
@@ -395,26 +576,388 @@
     </div>
   </section>
   <!------------->
-  <div class="container2">
-    <h1 style="font-weight: 800;color: white;">ABOUT US</h1>
-    <p style="margin-left: 10%;margin-right: 10%;color: white;font-weight: 700;">At Norbum Tours and Travel, our mission
-      is to provide the best experiences to our guests. With years of expertise in the travel industry in Bhutan, our
-      team of seasoned professionals is dedicated to making your journey unforgettable. Our experienced staff, who have
-      been with us for years, bring a wealth of knowledge and passion to every tour we offer.We are proud to be a
-      certified tour operator by the Department of Tourism, Royal Government of Bhutan. This certification reflects our
-      commitment to maintaining the highest standards of service and quality in the travel industry.
-      We take immense pride in the high value we place on our guests. Your satisfaction is our top priority, and we
-      strive to deliver exceptional service every step of the way. Whether you're exploring the majestic landscapes,
-      immersing yourself in the rich cultural heritage, or seeking adventure in the heart of Bhutan, Norbum Tours and
-      Travel ensures you have a seamless and enriching experience.
-      Join us on a journey of discovery and let Norbum Tours and Travel make your visit to Bhutan truly special.
-    </p>
+  <div class="container my-5">
+    <div class="row">
+        <h3 class="mb-3" style="text-align: center;color:#ff7f0e">Your Journey Begins Here</h3>
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://images.pexels.com/photos/30111933/pexels-photo-30111933/free-photo-of-traditional-bhutanese-festival-mask-dance.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Cultural Tour">
+                <div class="card-body">
+                    <h5 class="card-title">Explore Our Tour Packages</h5>
+                    <p class="card-text">    Dive into our meticulously designed tour packages that showcase the best of Bhutan, from awe-inspiring monasteries perched on cliff edges to exhilarating trekking routes through pristine forests. Whether you're embarking on a cultural odyssey, a spiritual retreat, or an adrenaline-fueled adventure,
+                   </p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://images.pexels.com/photos/914128/pexels-photo-914128.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Trekking Tour">
+                <div class="card-body">
+                    <h5 class="card-title">Immerse Yourself in Bhutanese Culture</h5>
+                    <p class="card-text">Delve into Bhutan's vibrant culture and traditions with our immersive cultural experiences. From attending colorful festivals to participating in traditional ceremonies, we offer authentic encounters that provide insights into Bhutan's unique way of life. </p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://images.pexels.com/photos/31203700/pexels-photo-31203700/free-photo-of-vibrant-theyyam-ritual-with-fire-performers.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Festival Tour">
+                <div class="card-body">
+                    <h5 class="card-title">Plan Your Dream Vacation</h5>
+                    <p class="card-text">Ready to embark on your Bhutanese adventure? Our dedicated team is here to help you plan every aspect of your trip, from arranging accommodations and transportation to providing insider tips and recommendations. Let us turn your dream vacation into a reality.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!------------->
 
+    <div class="container my-5">
+      <div class="row">
+          <h3 class="mb-3" style="text-align: center;color:#ff7f0e">Experience the Magic of Bhutan with Norbum Tours and Travels</h3>
+          <div class="col-md-4">
+              <div class="card shadow">
+                  <img src="https://images.pexels.com/photos/30111933/pexels-photo-30111933/free-photo-of-traditional-bhutanese-festival-mask-dance.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Cultural Tour">
+                  <div class="card-body">
+                      <h5 class="card-title">Book Your Adventure Today</h5>
+                      <p class="card-text">    Start your journey to the Land of Happiness by exploring our tour packages and contacting us to book your customized Bhutanese adventure. Whether you're traveling solo, with family, or in a group, Norbum Tours and Travels is your trusted partner for an unforgettable experience in Bhutan.
+                     </p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card shadow">
+                  <img src="https://images.pexels.com/photos/914128/pexels-photo-914128.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Trekking Tour">
+                  <div class="card-body">
+                      <h5 class="card-title">Join Us on Social Media</h5>
+                      <p class="card-text">: Stay connected with us on social media for the latest updates, travel inspiration, and exclusive offers. Follow us on Facebook, Instagram, and YouTube to be part of our vibrant community of fellow travelers.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card shadow">
+                  <img src="https://images.pexels.com/photos/31203700/pexels-photo-31203700/free-photo-of-vibrant-theyyam-ritual-with-fire-performers.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Festival Tour">
+                  <div class="card-body">
+                      <h5 class="card-title">Your Adventure Awaits </h5>
+                      <p class="card-text">This write-up aims to captivate visitors with the allure of Bhutan while highlighting Norbum Tours and Travels' unique offerings and commitment to providing unforgettable experiences. It invites travelers to embark on a journey of discovery and invites them to explore the diverse tour packages and cultural experiences available through the company.</p>
+                      <a href="#" class="btn">Learn More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
 
-  <div class="blank"></div>
+    <!------------->
+
+  <div class="Popular_Tour" >
+    <h1>Why Visit Bhutan</h1>
+    <h6>Getting to Know Bhutan</h6>
+    <button class="carousel-btn prev" onclick="scrollCarousel(-1)">&#10094;</button>
+    <div class="tour_Cards" id="carousel">
+      <div class="tour_sm_cards"
+      style="background-image: url('https://bhutan.sjsoftechtechnology.co.in/img/mej.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+      <div class="badges">
+        <!-- <span class="badge">20% off</span>
+              <span class="badge new">New</span> -->
+      </div>
+      <div class="tour_content">
+        <div class="stars">★★★★★ (2 Reviews)</div>
+        <h4>Majestic Landscapes<!-- | <s>3,880</s> 3,500</h4>  -->
+          <!-- <p style="font-size: 10px;">6 excursions to the main cities of the country; admire the beautiful autumn gardens.</p> -->
+          <!-- <p>🕒 7 days</p> -->
+           <h6 style="color:white">
+            Bhutan's pristine landscapes are a paradise for nature lovers. From lush valleys and dense forests to snow-capped peaks and crystal-clear rivers, the country's diverse ecosystems offer endless opportunities for adventure and relaxation. Hike through the beautiful Paro Valley, marvel at the grandeur of the Himalayas, or meditate by serene mountain lakes.
+
+           </h6>
+      </div>
+    </div>
+      <div class="tour_sm_cards"
+        style="background-image: url('https://bhutan.sjsoftechtechnology.co.in/img/cul.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+        <div class="badges">
+          <!-- <span class="badge">20% off</span>
+                <span class="badge new">New</span> -->
+        </div>
+        <div class="tour_content">
+          <div class="stars">★★★★★ (2 Reviews)</div>
+          <h4>Rich Cultural Heritage<!-- | <s>3,880</s> 3,500</h4>  -->
+            <!-- <p style="font-size: 10px;">6 excursions to the main cities of the country; admire the beautiful autumn gardens.</p> -->
+            <!-- <p>🕒 7 days</p> -->
+             <h6 style="color:white">
+              Bhutan's culture is deeply rooted in its Buddhist traditions. Visit ancient monasteries like Taktsang (Tiger's Nest), perched dramatically on a cliffside, or explore the stunning Punakha Dzong, a masterpiece of Bhutanese architecture. Witness vibrant festivals such as Tshechu, where locals in colorful attire perform traditional dances and rituals.
+
+             </h6>
+        </div>
+      </div>
+      <div class="tour_sm_cards"
+        style="background-image: url('https://bhutan.sjsoftechtechnology.co.in/img/tu.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+        <div class="badges">
+          <!-- <span class="badge">20% off</span>
+                <span class="badge new">New</span> -->
+        </div>
+        <div class="tour_content">
+          <div class="stars">★★★★★ (2 Reviews)</div>
+          <h4>Warm Hospitality </h4> <!-- | <s>3,880</s> 3,500 -->
+          <!-- <p style="font-size: 10px;">6 excursions to the main cities of the country; admire the beautiful autumn gardens.</p> -->
+          <!-- <p>🕒 7 days</p> -->
+           <h6>
+            Bhutanese people are renowned for their warmth and hospitality. As you journey through the country, you’ll experience the genuine friendliness of the locals, who are always eager to share their culture and way of life. Stay in charming homestays and enjoy authentic Bhutanese cuisine, including dishes like Ema Datshi (chili cheese) and Momos (dumplings).
+           </h6>
+        </div>
+      </div>
+      <div class="tour_sm_cards"
+        style="background-image: url('https://bhutan.sjsoftechtechnology.co.in/img/happy.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+        <div class="badges">
+          <!-- <span class="badge">20% off</span>
+                <span class="badge new">New</span> -->
+        </div>
+        <div class="tour_content">
+          <div class="stars">★★★★★ (2 Reviews)</div>
+          <h4>Gross National Happiness </h4> <!-- | <s>3,880</s> 3,500 -->
+          <!-- <p style="font-size: 10px;">6 excursions to the main cities of the country; admire the beautiful autumn gardens.</p> -->
+          <!-- <p>🕒 7 days</p> -->
+           <h6>
+            Bhutan is unique in measuring success by Gross National Happiness (GNH) rather than Gross Domestic Product (GDP). This philosophy prioritizes the well-being of its people and the environment, creating a peaceful and sustainable society. Visitors often feel asense of tranquility and inspiration, making Bhutan not just a destination but a transformative experience. 
+           </h6>
+        </div>
+      </div>
+      <div class="tour_sm_cards"
+        style="background-image: url('https://bhutan.sjsoftechtechnology.co.in/img/tu.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+        <div class="badges">
+          <!-- <span class="badge">20% off</span>
+                <span class="badge new">New</span> -->
+        </div>
+        <div class="tour_content">
+          <div class="stars">★★★★★ (2 Reviews)</div>
+          <h4>Our Exclusive Tours </h4> <!-- | <s>3,880</s> 3,500 -->
+          <!-- <p style="font-size: 10px;">6 excursions to the main cities of the country; admire the beautiful autumn gardens.</p> -->
+          <!-- <p>🕒 7 days</p> -->
+           <h6>
+            At Norbum Tours and Travel, we offer a variety of meticulously crafted tour packages that cater to every type of traveler. Whether you're seeking cultural immersion, spiritual journeys, or adventurous treks, we have something for everyone.
+           </h6>
+        </div>
+      </div>
+      <div class="tour_sm_cards"
+        style="background-image: url('https://bhutan.sjsoftechtechnology.co.in/img/culture%20(2).jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+        <div class="badges">
+          <!-- <span class="badge">20% off</span>
+                <span class="badge new">New</span> -->
+        </div>
+        <div class="tour_content">
+          <div class="stars">★★★★★ (2 Reviews)</div>
+          <h4>6.	Cultural Tours </h4> <!-- | <s>3,880</s> 3,500 -->
+          <!-- <p style="font-size: 10px;">6 excursions to the main cities of the country; admire the beautiful autumn gardens.</p> -->
+          <!-- <p>🕒 7 days</p> -->
+           <h6>
+            Immerse yourself in Bhutan's rich heritage with our cultural tours. Visit iconic dzongs, explore traditional villages, and participate in local festivals. Our knowledgeable guides will provide deep insights into the history and significance of each site.
+           </h6>
+        </div>
+      </div>
+      <div class="tour_sm_cards"
+      style="background-image: url('https://bhutan.sjsoftechtechnology.co.in/img/p%20(2).jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+      <div class="badges">
+        <!-- <span class="badge">20% off</span>
+              <span class="badge new">New</span> -->
+      </div>
+      <div class="tour_content">
+        <div class="stars">★★★★★ (2 Reviews)</div>
+        <h4>Adventure Tours </h4> <!-- | <s>3,880</s> 3,500 -->
+        <!-- <p style="font-size: 10px;">6 excursions to the main cities of the country; admire the beautiful autumn gardens.</p> -->
+        <!-- <p>🕒 7 days</p> -->
+         <h6>
+          For the thrill-seekers, our adventure tours offer exhilarating activities such as trekking, river rafting, and wildlife safaris. Traverse the challenging trails of the Jomolhari Trek or embark on a bird-watching expedition in the Phobjikha Valley.
+         </h6>
+      </div>
+    </div>
+    <div class="tour_sm_cards"
+    style="background-image: url('https://bhutan.sjsoftechtechnology.co.in/img/sp.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+    <div class="badges">
+      <!-- <span class="badge">20% off</span>
+            <span class="badge new">New</span> -->
+    </div>
+    <div class="tour_content">
+      <div class="stars">★★★★★ (2 Reviews)</div>
+      <h4>Spiritual Tours</h4> <!-- | <s>3,880</s> 3,500 -->
+      <!-- <p style="font-size: 10px;">6 excursions to the main cities of the country; admire the beautiful autumn gardens.</p> -->
+      <!-- <p>🕒 7 days</p> -->
+       <h6>
+        Rejuvenate your mind, body, and soul with our spiritual tours. Meditate with monks in serene monasteries, join yoga retreats in the mountains, and explore sacred sites that have been centers of pilgrimage for centuries.
+       </h6>
+    </div>
+  </div>
+  <div class="tour_sm_cards"
+  style="background-image: url('https://bhutan.sjsoftechtechnology.co.in/img/tu.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+  <div class="badges">
+    <!-- <span class="badge">20% off</span>
+          <span class="badge new">New</span> -->
+  </div>
+  <div class="tour_content">
+    <div class="stars">★★★★★ (2 Reviews)</div>
+    <h4>Customized Itineraries</h4> <!-- | <s>3,880</s> 3,500 -->
+    <!-- <p style="font-size: 10px;">6 excursions to the main cities of the country; admire the beautiful autumn gardens.</p> -->
+    <!-- <p>🕒 7 days</p> -->
+     <h6>
+      We understand that every traveler is unique. That's why we offer customized itineraries tailored to your preferences and interests. Whether you're planning a romantic getaway, a family vacation, or a solo adventure, we will create a personalized journey just for you.
+     </h6>
+  </div>
+</div>
+    </div>
+    <button class="carousel-btn next" onclick="scrollCarousel(1)">&#10095;</button>
+  </div>
 
 
+ 
+ 
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="container text-center text-white">
+          <h1 class="display-4 fw-bold">Plan Your Dream Trip to Bhutan</h1>
+          <h5 class="lead fw-bold">Book your journey with us for an unforgettable experience</h5>
+      </div>
+  </header>
+
+  <!-- Booking Form Section -->
+  <section class="container my-5">
+      <h2 class="text-center mb-4">Book Your Trip</h2>
+      <form id="bookingForm" class="row g-3">
+          <div class="col-md-6">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="col-md-6">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="col-md-6">
+              <label for="date" class="form-label">Travel Date</label>
+              <input type="date" class="form-control" id="date" required>
+          </div>
+          <div class="col-md-6">
+              <label for="destination" class="form-label">Select Destination</label>
+              <select class="form-select" id="destination">
+                  <option selected disabled>Choose...</option>
+                  <option>Paro Taktsang (Tiger’s Nest)</option>
+                  <option>Punakha Dzong</option>
+                  <option>Thimphu</option>
+                  <option>Bumthang Valley</option>
+              </select>
+          </div>
+          <div class="col-12">
+              <label for="message" class="form-label">Special Requests</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Any special requests or requirements?"></textarea>
+          </div>
+          <div class="col-12 text-center">
+              <button type="submit" class="btn px-5">Submit Booking</button>
+          </div>
+      </form>
+  </section>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container text-center text-white">
+        <h1 class="display-4 fw-bold">Explore Gallery</h1>
+        <h4 class="lead fw-bold">A visual journey through the beauty of Bhutan</h4>
+    </div>
+</header>
+   <!-- Photo Gallery Section -->
+   <section class="container my-5">
+    <h2 class="text-center mb-4">Photo Gallery</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1519467722427-f32990069f96?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1608236475087-615bfbcdf772?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1566020588509-f77f840f1454?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="gallery-item">
+                <img src="https://plus.unsplash.com/premium_photo-1661952578770-79010299a9f9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ymh1dGFufGVufDB8fDB8fHww" class="img-fluid gallery-img">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1587639895914-6f33530a3314?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1545030856-612d5feaf990?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+            </div>
+        </div>
+    </div>
+ 
+    
+</section>
+
+<!-- Video Gallery Section -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Video Gallery</h2>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="video-container">
+                <iframe src="images/3121327-uhd_3840_2160_24fps.mp4" type="video/mp4" ></iframe>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="video-container">
+                <iframe src="images/11901574_1920_1080_30fps.mp4" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Photo Gallery Section -->
+   
+
+<section class="container my-5">
+    <h2 class="text-center mb-4">Photo Gallery</h2>
+    <div class="row g-4">
+        
+        <div class="col-md-4">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1729176989417-10cab5aa9076?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1618082445556-8b5e4fee89dd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1650747857310-c359fd3ee5c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid gallery-img">
+            </div>
+        </div>
+        <div class="row mt-2 g-4 row-cols-1 row-cols-lg-2">
+            <div class="col">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/761265/pexels-photo-761265.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                         class="img-fluid gallery-img">
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/3823266/pexels-photo-3823266.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                         class="img-fluid gallery-img">
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+</section>
   <!--------footer----------->
   <!-- <div class="about_hero container" >
         <div class="row" style="height:100%;overflow: hidden;">
@@ -474,7 +1017,8 @@
 
     </div> -->
 
-  <footer class="footer">
+  <footer class="footer" style="position: relative;">
+    
     <div class="footer__addr">
       <h1 class="footer__logo">Something</h1>
 

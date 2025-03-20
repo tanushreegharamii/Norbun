@@ -18,18 +18,30 @@
 body {
     font-family: cinzel;
 }
+@keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
 
+        h1,h5{
+          animation: slideUp 1.5s ease-out forwards;
+        }
 /* Hero Section */
 .hero {
-    background: url('https://images.unsplash.com/photo-1617469165885-0db8294c3232?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+    background: url('./images/destination.jpg') no-repeat center center/cover;
     height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ff7f0e;
     /* text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); */
-}
-h1, h5{
+} h5{
     color: #ff7f0e !important
 }
 
@@ -222,54 +234,64 @@ footer {
 <body>
 
           <!-- NAVBAR -->
-  <nav class="navbar p-4 navbar-expand-lg ">
-    <div class="container-fluid">
-      <a class="navbar-brand text-light" href="#">Norbum</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto mb-2 gap-3 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./destination.html">Destination</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="book_your_trip.html">Book Trip</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Guide
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./know_bhutan.html">Know Bhutan</a></li>
-              <li><a class="dropdown-item" href="./travel_guide.html">Travel Guide</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="./flights.html">Flights</a></li>
-              <li><a class="dropdown-item" href="./getting_to_bhutan.html">Getting To Bhutan</a></li>
-              <li><a class="dropdown-item" href="./special_tour.html">Speacial Tour</a></li>
-              <li><a class="dropdown-item" href="./driving_distances.html">Driving Distances </a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./trek.html">Trek</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html">About Us</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
+          <nav class="navbar p-4 navbar-expand-lg " style="position: fixed;z-index: 999;width: 100%;margin-bottom: 300px;">
+            <div class="chatbot_wtsapp" style="display:flex;justify-content: space-between;width:100%;position: absolute;top:80vh;left:0;padding: 2%;align-items: center;">
+              <div style="align-content: center;width:200px;height:40px;background-color: #ff7f0e;color:white;border-radius:5px;padding: 1%;font-size: 13px;">
+                How Can We Help You
+              </div>
+              <div >
+                   <img src="images/wplogo.avif" style="height: 80px;width:80px;">
+              </div>
+          </div>
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href="#">
+                <img style="width:100px" src="images/logo-min.png">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 gap-3 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./destination.html">Destination</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="book_your_trip.html">Book Trip</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Guide
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./travel_guide.html">Travel Guide</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./festival_tour.html">Festival Tour</a></li>
+                      <li><a class="dropdown-item" href="./know_bhutan.html">Getting To Know Bhutan</a></li>
+                      <li><a class="dropdown-item" href="./special_tour.html">Speacial Tour</a></li>
+                      <li><a class="dropdown-item" href="./driving_distances.html">Driving Distances </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./trek.html">Trek</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About Us</a>
+                  </li>
+                </ul>
+               
+                  <p style="font-size:25px;margin-top: 10px;">NORBUM</p>
+                
+              </div>
+            </div>
+          </nav>
+
 
 
 
@@ -280,10 +302,13 @@ footer {
 
 
     <!-- Hero Section -->
+     <br>
+     <br>
+     <br>
     <header class="hero">
         <div class="container text-center text-white">
-            <h1 class="display-4">Explore Destinations</h1>
-            <h5 class="lead">Top Iconic Places in Bhutan</h5>
+            <h1 class="display-4 fw-bold">Explore Destinations</h1>
+            <h5 class="lead text-white fw-bold">Top Iconic Places in Bhutan</h5>
         </div>
     </header>
 
